@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Translator</title>
+    <link rel="icon" type="image/png" href="icon2.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="section">
+        <div class="text-input">
+          <textarea class="from-text" placeholder="Enter text"></textarea>
+          <textarea
+            class="to-text"
+            placeholder="Translation"
+            readonly
+            disabled
+          ></textarea>
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i data-target="from" class="fa-solid fa-volume-high"></i>
+              <i data-target="from" class="fa-solid fa-copy"></i>
+            </div>
+            <select>
+              <!-- <option value="my-MM">Myanmar</option>
+              <option value="en-US">English</option>
+              <option value="ja">Japanese</option> -->
+            </select>
+          </li>
+          <li class="exchange"><i class="fa-solid fa-right-left"></i></li>
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <i data-target="to" class="fa-solid fa-volume-high"></i>
+              <i data-target="to" class="fa-solid fa-copy"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button>Translate Language</button>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/1eeee0858b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="countries.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
